@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: pholsoophak-09pvhpholsokphakspringhomework002
-          image: kshrdautopilot/pholsoophak-09pvhpholsokphakspringhomework002
+          image: kshrdautopilot/pholsoophak-09pvhpholsokphakspringhomework002:2023-12-04-03-10-59
           ports:
             - containerPort: 8080
