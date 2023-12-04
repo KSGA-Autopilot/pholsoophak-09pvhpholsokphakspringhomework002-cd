@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pholsoophak-09pvhpholsokphakspringhomework002-deployment
+  labels:
+    app: pholsoophak-09pvhpholsokphakspringhomework002
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: pholsoophak-09pvhpholsokphakspringhomework002
+  template:
+    metadata:
+      labels:
+        app: pholsoophak-09pvhpholsokphakspringhomework002
+    spec:
+      containers:
+        - name: pholsoophak-09pvhpholsokphakspringhomework002
+          image: kshrdautopilot/pholsoophak-09pvhpholsokphakspringhomework002
+          ports:
+            - containerPort: 8080
