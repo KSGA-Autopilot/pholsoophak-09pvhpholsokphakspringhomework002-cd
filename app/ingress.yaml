@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: pholsoophak-09pvhpholsokphakspringhomework002-ingress
+  namespace: pholsoophak
+spec:
+  tls:
+    - hosts:
+        - spring.hanyeaktong.site
+      secretName: spring-hanyeaktong-site-cert
+  rules:
+    - host: spring.hanyeaktong.site
+      http:
+        paths:
+          - pathType: Prefix
+            path: /
+            backend:
+              service:
+                name: pholsoophak-09pvhpholsokphakspringhomework002-svc
+                port:
+                  number: 8080
